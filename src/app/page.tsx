@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SomeNumber from "@/Lectio/Handler";
 
 export default function Home() {
   return (
