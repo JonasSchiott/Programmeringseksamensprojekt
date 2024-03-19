@@ -1,8 +1,12 @@
-import { ConnectToLectio } from "@/Lectio/Handler";
+import { ConnectToLectio, UserLogin } from "@/Lectio/Handler";
 import { ReactElement } from "react";
+import { Load } from "@/lib/lectioHandler/ConfigLoader";
+
 
 export default function Home(): ReactElement {
   return (
-      <h1>f</h1>
+      <main>
+        <p>hej</p>
+      </main>
   );
 }

@@ -6,19 +6,19 @@ export async function ConnectToLectio({ Username, Password, GymnasiumNumber }: U
     postBody.append('username', Username);
     postBody.append('password', Password);
 
-    let response: object = {};
+    let response;
     
     await fetch(lectioLoginPage, {
         method: 'POST',
         body: postBody,
-    }).then(res => response = res.json);
+    }).then(res => response = res);
 
-    console.log(response);
+    console.log(response)
 
     return true;
 }
 
-type UserLogin = {
+export type UserLogin = {
     Username: string,
     Password: string,
     GymnasiumNumber: number
