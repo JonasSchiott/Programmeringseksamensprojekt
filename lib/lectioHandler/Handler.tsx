@@ -1,5 +1,5 @@
 export async function ConnectToLectio({ Username, Password, GymnasiumNumber }: UserLogin): Promise<boolean> {
-    const lectioLoginPage = `https://www.lectio.dk/lectio/${GymnasiumNumber}/login.aspx`;
+    const lectioLoginPage: string = `https://www.lectio.dk/lectio/${GymnasiumNumber}/login.aspx`;
 
     const postBody: FormData = new FormData();
 
